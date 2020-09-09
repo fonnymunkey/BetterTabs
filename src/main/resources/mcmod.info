@@ -1,0 +1,16 @@
+[
+{
+  "modid": "bettertabs",
+  "name": "BetterTabs",
+  "description": "Mod addon to add Tabs/Tooltips to the mods BetterQuesting, LevelUpReloaded, and LycanitesMobs",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Fonnymunkey"],
+  "credits": "Hoonts for BetterQuesting Icon",
+  "logoFile": "title.jpg",
+  "screenshots": [],
+  "dependencies": ["betterquesting","levelup2"]
+}
+]
