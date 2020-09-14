@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.0.0"
+version = "1.0.1"
 group = "bettertabs" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "BetterTabs"
 
@@ -54,7 +54,7 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-	compile files('lib/BetterQuesting-3.5.317.jar','lib/Level Up! 2-1.1.23-1.12.jar')
+	compile files('libs/BetterQuesting-3.5.317.jar','libs/levelup2-1.5.6.jar','libs/Level+Up!+Legacy-0.15.1-1.12.2.jar','libs/classyhats-1.6.0.jar','libs/librarianlib-1.12.2-4.22.jar')
 }
 
 processResources {

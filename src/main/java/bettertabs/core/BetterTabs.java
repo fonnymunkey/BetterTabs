@@ -13,11 +13,11 @@ import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
-@Mod(modid = BetterTabs.MODID, version = BetterTabs.VERSION, name = BetterTabs.NAME, dependencies = "after:betterquesting;after:levelup2;after:lycanitesmobs")
+@Mod(modid = BetterTabs.MODID, version = BetterTabs.VERSION, name = BetterTabs.NAME, dependencies = "after:betterquesting;after:levelup2;after:lycanitesmobs;after:levelup;after:classyhats;after:librarianlib")
 public class BetterTabs
 {
     public static final String MODID = "bettertabs";
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.0.1";
     public static final String NAME = "BetterTabs";
     public static final String PROXY = "bettertabs.core.proxies";
     public static final String CHANNEL = "BETTERTABS";
@@ -34,7 +34,9 @@ public class BetterTabs
     public void preInit(FMLPreInitializationEvent event)
     {
     	logger = event.getModLog();
-    	network = NetworkRegistry.INSTANCE.newSimpleChannel(CHANNEL);   	
+    	network = NetworkRegistry.INSTANCE.newSimpleChannel(CHANNEL);   
+
+    	proxy.registerConfig(event);
     }
     
     @EventHandler
