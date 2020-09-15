@@ -12,6 +12,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ResourceLocation;
 
 public class BetterQuestingTab extends GuiButton {
@@ -41,7 +42,7 @@ public class BetterQuestingTab extends GuiButton {
             RenderHelper.disableStandardItemLighting();
             GlStateManager.disableLighting();
             //GlStateManager.disableDepth(); Makes tooltip box fall behind tabs registered later if enabled
-            String txt = "Better Questing";
+            String txt = I18n.format("bettertabs.tab.betterquesting", this.hovered);
             int i = mc.fontRenderer.getStringWidth(txt);
 
             int l1 = mouseX + 12;

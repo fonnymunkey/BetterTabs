@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 public class BetterTabs
 {
     public static final String MODID = "bettertabs";
-    public static final String VERSION = "1.0.1";
+    public static final String VERSION = "1.0.2";
     public static final String NAME = "BetterTabs";
     public static final String PROXY = "bettertabs.core.proxies";
     public static final String CHANNEL = "BETTERTABS";
@@ -42,7 +42,7 @@ public class BetterTabs
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        ModContainer modContainer = Loader.instance().getIndexedModList().get("bqtab");
+        ModContainer modContainer = Loader.instance().getIndexedModList().get("bettertabs");
         if(modContainer != null && modContainer.getMod() instanceof BetterTabs)
         {
             BetterTabs modInstance = (BetterTabs)modContainer.getMod();

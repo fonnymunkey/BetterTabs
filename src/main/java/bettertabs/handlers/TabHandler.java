@@ -10,6 +10,7 @@ import bettertabs.client.gui.HatsTab;
 import bettertabs.client.gui.LevelUpLegacyTab;
 import bettertabs.client.gui.LevelUpReloadedTab;
 import net.minecraft.client.gui.inventory.GuiInventory;
+import net.minecraft.client.resources.I18n;
 import net.minecraftforge.client.event.GuiScreenEvent;
 
 public class TabHandler
@@ -40,7 +41,7 @@ public class TabHandler
         		int xMinLY = (event.getGui().width/2)+55;
         		int yMinLY = (event.getGui().height/2)-110;
         		if(xMinLY<mouseX && mouseX<xMinLY+30 && yMinLY<mouseY && mouseY<yMinLY+27)
-        			event.getGui().drawHoveringText("Lycanite's Mobs", mouseX, mouseY);
+        			event.getGui().drawHoveringText(I18n.format("bettertabs.tooltip.lycanitesmobs", true), mouseX, mouseY);
     		}
     	}
     }

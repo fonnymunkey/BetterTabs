@@ -10,6 +10,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ResourceLocation;
 
 public class HatsTab extends GuiButton {
@@ -36,7 +37,7 @@ public class HatsTab extends GuiButton {
             RenderHelper.disableStandardItemLighting();
             GlStateManager.disableLighting();
             //GlStateManager.disableDepth(); Makes tooltip box fall behind tabs registered later if enabled
-            String txt = "Classy Hats";
+            String txt = I18n.format("bettertabs.tab.hats", this.hovered);
             int i = mc.fontRenderer.getStringWidth(txt);
 
             int l1 = mouseX + 12;
