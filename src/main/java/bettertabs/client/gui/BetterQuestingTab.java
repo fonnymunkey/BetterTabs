@@ -42,7 +42,7 @@ public class BetterQuestingTab extends GuiButton {
             RenderHelper.disableStandardItemLighting();
             GlStateManager.disableLighting();
             //GlStateManager.disableDepth(); Makes tooltip box fall behind tabs registered later if enabled
-            String txt = I18n.format("bettertabs.tab.betterquesting", this.hovered);
+            String txt = I18n.format("bettertabs.tab.betterquesting");
             int i = mc.fontRenderer.getStringWidth(txt);
 
             int l1 = mouseX + 12;

@@ -41,7 +41,7 @@ public class TabHandler
         		int xMinLY = (event.getGui().width/2)+55;
         		int yMinLY = (event.getGui().height/2)-110;
         		if(xMinLY<mouseX && mouseX<xMinLY+30 && yMinLY<mouseY && mouseY<yMinLY+27)
-        			event.getGui().drawHoveringText(I18n.format("bettertabs.tooltip.lycanitesmobs", true), mouseX, mouseY);
+        			event.getGui().drawHoveringText(I18n.format("bettertabs.tooltip.lycanitesmobs"), mouseX, mouseY);
     		}
     	}
     }

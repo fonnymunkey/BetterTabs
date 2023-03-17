@@ -45,7 +45,7 @@ public class LevelUpReloadedTab extends GuiButton {
             RenderHelper.disableStandardItemLighting();
             GlStateManager.disableLighting();
             //GlStateManager.disableDepth(); Makes tooltip box fall behind tabs registered later if enabled
-            String txt = I18n.format("bettertabs.tab.levelupreloaded", this.hovered);
+            String txt = I18n.format("bettertabs.tab.levelupreloaded");
             int i = mc.fontRenderer.getStringWidth(txt);
 
             int l1 = mouseX + 12;
